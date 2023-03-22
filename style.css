@@ -2,6 +2,7 @@
 
 body {
     background: #f8f7f7;
+    user-select: none;
 }
 
 #main {
@@ -35,10 +36,11 @@ auto - Scroll değerine benzer, ancak yalnızca gerektiğinde kaydırma çubukla
 
 #resultInner {
     display: block;
-    margin: 10px;
+    margin:10px 15px;
     background: #4b5379;
     width: 239px;
     height: 40px;
+    text-align: right;
     font-family: 'Press Start 2P', cursive;
     font-size: 20px;
     color: rgb(1, 140, 1);
@@ -60,6 +62,12 @@ auto - Scroll değerine benzer, ancak yalnızca gerektiğinde kaydırma çubukla
     border-radius: 4px;
     background: #ffffff;
     margin: 4px;
+    cursor: pointer;
+}
+
+#numbers .num:hover {
+    background: #2c3e50;
+    color: #ffffff;
 }
 
 #numbers a{
@@ -96,8 +104,15 @@ auto - Scroll değerine benzer, ancak yalnızca gerektiğinde kaydırma çubukla
     border-radius: 4px;
     background: #ffffff;
     margin: 4px;
+    cursor: pointer;
 
 }
+
+#operators .operator:hover {
+    background: #2c3e50;
+    color: #ffffff;
+}
+
 
 #resultOperators {
     margin-top: -58px;
@@ -115,7 +130,15 @@ auto - Scroll değerine benzer, ancak yalnızca gerektiğinde kaydırma çubukla
     border-radius: 4px;
     background: #ffffff;
     margin: 4px;
+    cursor: pointer;
+
 }
+
+#resultOperators .resultOperator:hover {
+    background: #2c3e50;
+    color: #ffffff;
+}
+
 
 /* important öncelik belirtisidir. Yani width 100 verdim. Fakat daa öncesinde bu yapıya width verildiği için öncelik onu alıyor. Bu yüzden !important özelliği önceliği neye istersem ona vermemi sağlıyor. */
 #equation {

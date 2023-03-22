@@ -71,6 +71,11 @@ window.onload = function () {
 
     document.getElementById("delete").addEventListener("click", function () {
 
+        selectedOperator = "";
+        leftPart = "";
+        rightPart = "";
+        document.getElementById("resultInner").innerHTML = "";
+
     }, false);
 
 };

@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body{
+    background: #f8f7f7;
+}
+#main{
+    width: 260px;
+    height: 445px;
+    margin: 0 auto;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    background-color: ghostwhite;   /*18:19*/
+}
+#main h1{
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    color: rgb(60, 56, 109);
+}
+/* "overflow" özelliği, bir alana sığmayacak kadar büyük içeriğe ne olacağını kontrol eder.Overflow özelliği, bir etiketin içeriği belirtilen alana sığmadığında içeriğin kırpılıp kırpılmayacağını veya kaydırma çubukları eklenip eklenmeyeceğini belirtir. 
+visible - Varsayılan değerdir. Taşma kırpılmaz. İçerik, etiketin dışında görüntülenmeye devam eder.
+hidden - Taşma kırpılır ve içeriğin geri kalanı görünmez olur
+scroll - Taşma kırpılır ve içeriğin geri kalanını görmek için bir kaydırma çubuğu (scrollbar) eklenir
+auto - Scroll değerine benzer, ancak yalnızca gerektiğinde kaydırma çubukları ekler.
+*/
+#result{
+    background: #2c3e50;
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+}
+
+#resultInner{
+    display: block;
+    margin: 10px;
+    background: #4b5379;
+    width: 239px;
+    height: 40px;
+    font-family: 'Press Start 2P', cursive;
+    color: rgb(1, 140, 1);
+}
+
+#numbers{
+    background: #ecf0f1;
+    margin-left: 7px;
+    width: 185px;
+    height: 235px;
+    float: left;
+    border-radius: 4px;
+}
+
+#numbers .num{
+    width: 50px;
+    height: 50px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    background: #ffffff;
+    margin: 4px;
+}
+
+#operators{
+    background: #95a5a6;
+    width: 60px;
+    height: 300px;
+    margin-right: 5px;
+    float: right;
+    border-radius: 4px;
+}
+
+#operators .operator{
+    background: #95a5a6;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    background: #ffffff;
+    margin: 4px;
+    
+}
+
+#resultOperators{
+    margin-top: -58px;
+    margin-left: 7px;
+    width: 185px;
+    background: #7f8c8d;
+    border-radius: 4px;
+}
+
+#resultOperators .resultOperator{
+    background: #95a5a6;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    background: #ffffff;
+    margin: 4px;
+}
+/* important öncelik belirtisidir. Yani width 100 verdim. Fakat daa öncesinde bu yapıya width verildiği için öncelik onu alıyor. Bu yüzden !important özelliği önceliği neye istersem ona vermemi sağlıyor. */
+#equation{
+    width: 110px !important;
+}
+
+.clear{
+    clear: both;
+}

@@ -5,7 +5,7 @@ body {
 }
 
 #main {
-    width: 260px;
+    width: 270px;
     height: 445px;
     margin: 0 auto;
     border: 1px solid #000000;
@@ -61,6 +61,23 @@ auto - Scroll değerine benzer, ancak yalnızca gerektiğinde kaydırma çubukla
     background: #ffffff;
     margin: 4px;
 }
+
+#numbers a{
+    margin-left: 5px;
+    padding-right: 7px;
+    margin-top: 4px;
+    float: left;
+     }
+
+     /* resime border radius eklemek için yapılması gerekenler */
+#numbers a img{
+    border: 1px solid #999;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+
 
 #operators {
     background: #95a5a6;

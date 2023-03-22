@@ -43,26 +43,26 @@ window.onload = function () {
     document.getElementById("equation").addEventListener("click", function () {
 
         if (selectedOperator == "+") {
-            document.getElementById("resultInner").innerHTML = leftPart + rightPart;
+            document.getElementById("resultInner").innerHTML = parseInt(leftPart) + parseInt(rightPart);
         }
 
         else if (selectedOperator == "-") {
-            document.getElementById("resultInner").innerHTML = leftPart - rightPart;
+            document.getElementById("resultInner").innerHTML = parseInt(leftPart) - parseInt(rightPart);
 
         }
 
         else if (selectedOperator == "*") {
-            document.getElementById("resultInner").innerHTML = leftPart * rightPart;
+            document.getElementById("resultInner").innerHTML = parseInt(leftPart) * parseInt(rightPart);
 
         }
 
         else if (selectedOperator == "/") {
-            document.getElementById("resultInner").innerHTML = leftPart / rightPart;
+            document.getElementById("resultInner").innerHTML = parseInt(leftPart) / parseInt(rightPart);
 
         }
 
         else if (selectedOperator == "%") {
-            document.getElementById("resultInner").innerHTML = leftPart % rightPart;
+            document.getElementById("resultInner").innerHTML = parseInt(leftPart) % parseInt(rightPart);
 
         }
 

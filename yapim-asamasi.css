@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    background: #000000;
+    user-select: none;
+}
+
+#main {
+    width: 550px;
+    height: 70px;
+    margin: 20% auto;
+    border: 1px solid rgb(60, 56, 109);
+    border-radius: 5px;
+    /*18:19*/
+}
+
+#main h1 {
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    color: rgb(60, 56, 109);
+}
+/* yanıp sönme efekti verme kod bloğu */
+.blink{
+    width: 200px;
+    height: 50px;
+    margin: auto;
+    animation-name: blinker;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    color: azure;
+    font-size: 25px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.blink a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.blink:hover{
+    /* yazı üzerine gelince animasyonu durdur kodu */
+    /* animation-play-state: paused; */
+    cursor: pointer;
+}
+
+@keyframes blinker{
+    0%{opacity: 1.0;}
+    50%{opacity: 0.0;}
+    100%{opacity: 1.0;}
+
+}
+
